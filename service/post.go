@@ -26,11 +26,11 @@ type Service struct{}
 
 func (*Service) Validate(post *entity.Post) error {
 	if post == nil {
-		return errors.New("The post is empty")
+		return errors.New("the post is empty")
 	}
 
 	if post.Title == "" {
-		return errors.New("The post title is empty")
+		return errors.New("the post title is empty")
 	}
 
 	return nil
